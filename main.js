@@ -39,7 +39,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=649')
 					  		newTable.appendChild(tr);
 
 					  		for (let k = 0; k < bigArray[j].length; k++) {
-					  			if (bigArray[j][k][0].indexOf("-") == -1) {
+					  			if (bigArray[j][k][0].indexOf("-") == -1 && bigArray[j][k][0].indexOf("pansage") == -1 && bigArray[j][k][0].indexOf("pansear") == -1 && bigArray[j][k][0].indexOf("pansour") == -1 && bigArray[j][k][0].indexOf("simisage") == -1 && bigArray[j][k][0].indexOf("simisear") == -1 && bigArray[j][k][0].indexOf("simipour") == -1) {
 						  			let tr2 = document.createElement("tr");
 						  			let td1 = document.createElement("td");
 						  			let td2 = document.createElement("td");
