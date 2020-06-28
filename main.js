@@ -19,6 +19,10 @@ fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=649')
   		// console.log(myJson);
   		for (let i = 0; i < 650; i++) {
 
+  			if (i == 630) {
+  				console.log("name: ", myJson.results[i].name);
+  			}
+
   			checkImage("footprints/" + (i + 1) + ".png", 
   				// if image loads
   				function() { 
@@ -39,7 +43,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=649')
 					  		newTable.appendChild(tr);
 
 					  		for (let k = 0; k < bigArray[j].length; k++) {
-					  			if (bigArray[j][k][0].indexOf("-") == -1 && bigArray[j][k][0].indexOf("pansage") == -1 && bigArray[j][k][0].indexOf("pansear") == -1 && bigArray[j][k][0].indexOf("panpour") == -1 && bigArray[j][k][0].indexOf("simisage") == -1 && bigArray[j][k][0].indexOf("simisear") == -1 && bigArray[j][k][0].indexOf("simipour") == -1 && bigArray[j][k][0].indexOf("shellos") == -1 && bigArray[j][k][0].indexOf("gastrodon") == -1) {
+					  			if (bigArray[j][k][0].indexOf("-") == -1 && bigArray[j][k][0].indexOf("shellos") == -1 && bigArray[j][k][0].indexOf("gastrodon") == -1) {
 						  			let tr2 = document.createElement("tr");
 						  			let td1 = document.createElement("td");
 						  			let td2 = document.createElement("td");
