@@ -19,19 +19,11 @@ fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=649')
   		// console.log(myJson);
   		for (let i = 0; i < 650; i++) {
 
-  			if (i == 630) {
-  				console.log("name: ", myJson.results[i].name);
-  			}
-
   			checkImage("footprints/" + (i + 1) + ".png", 
   				// if image loads
   				function() { 
   					let name = myJson.results[i].name;
   					let nameLength = name.length; // 19 is the longest
-
-  					if (name == "heatmor") {
-		  				console.log("heatmor is on!");
-		  			}
 
   					bigArray[nameLength - 3].push([name, i + 1]);
   				
