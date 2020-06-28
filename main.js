@@ -49,9 +49,9 @@ $(document).ready(function() {
                   tr2.appendChild(td1);
                   tr2.appendChild(newImg);
                 }
-            }
+              }
 
-            bigDiv.appendChild(newTable);
+              bigDiv.appendChild(newTable);
             }
 
             body.appendChild(bigDiv);
@@ -65,12 +65,5 @@ $(document).ready(function() {
     }
 
   });
-  
-}); 
 
-// function checkImage(imageSrc, good, bad) {
-//     var img = new Image();
-//     img.onload = good; 
-//     img.onerror = bad;
-//     img.src = imageSrc;
-// }
+});
