@@ -29,7 +29,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=649')
   					let name = myJson.results[i].name;
   					let nameLength = name.length; // 19 is the longest
 
-  					if (name == "heatmore") {
+  					if (name == "heatmor") {
 		  				console.log("heatmor is on!");
 		  			}
 
