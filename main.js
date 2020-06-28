@@ -60,7 +60,11 @@ $(document).ready(function() {
           }, 
 
           // if image does not load
-          function() { console.log(i) } );
+          function() { 
+            console.log("before:", i); 
+            i--; 
+            console.log("after:", i);
+          });
 
       }
     },
