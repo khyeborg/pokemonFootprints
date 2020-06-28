@@ -2,7 +2,6 @@ let body = document.querySelector("body");
 let bigArray = [];
 let counter = 3;
 let excludeArray = [];
-let go = true;
 
 for (let i = 0; i < 17; i++) {
 	bigArray.push([]);
@@ -17,8 +16,6 @@ $(document).ready(function() {
       console.log(data);
 
       for (let i = 0; i < 650; i++) {
-
-        if (go == true) {
 
         checkImage("footprints/" + (i + 1) + ".png", 
           // if image loads
@@ -63,7 +60,7 @@ $(document).ready(function() {
           }, 
 
           // if image does not load
-          function() { console.log(i); } );
+          function() { console.log(i) } );
 
       }
     },
