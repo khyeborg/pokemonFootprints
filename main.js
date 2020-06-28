@@ -76,7 +76,7 @@ function all() {
   }); // end jQuery document ready function
 }
 
-setTimeout(all, 5000);
+setTimeout(all, 10000);
 
 function checkImage(imageSrc, good, bad) {
     var img = new Image();
