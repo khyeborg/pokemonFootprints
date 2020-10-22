@@ -37,7 +37,7 @@ $(document).ready(function() {
           if (i == 648) {
             let bigDiv = document.createElement("div");
 
-            for (let j = 0; j < bigArray.length - 9; j++) {
+            for (let j = 1; j < bigArray.length - 9; j++) {
               let newTable = document.createElement("table");
               let tr = document.createElement("tr");
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
                     newImg.style.width = "50px";
                     newImg.style.height = "50px";
                   }
-                  
+
                   td1.innerHTML = bigArray[j][k][0];
 
                   newTable.appendChild(tr2);
