@@ -22,8 +22,8 @@ $(document).ready(function() {
           let name = data.results[i].name;
 
           // special cases
-          if (name == "mr-mime") { name = "mr. mime"; }
-          if (name == "mime-jr") { name = "mime jr."; }
+          if (name == "mr-mime") { name = "mrmime"; }
+          if (name == "mime-jr") { name = "mimejr"; }
           if (name == "deoxys-normal") { name = "deoxys"; }
           if (name == "shaymin-land") { name = "shaymin"; }
           if (name == "keldeo-ordinary") { name = "keldeo"; }
@@ -67,10 +67,45 @@ $(document).ready(function() {
 
                   td1.innerHTML = bigArray[j][k][0];
 
+                  let tempInput = document.getElementById("myInput");
+                  tempInput.style.display = "none";
+
                   newTable.appendChild(tr2);
                   tr2.appendChild(td1);
                   tr2.appendChild(newImg);
-                // }
+
+                  let tempArray = [td1, newImg];
+
+                  for (let i = 0; i < tempArray.length; i++) {
+                    tempArray[i].onclick = function() {
+                      let copyText = tempInput;
+                      copyText.value = bigArray[j][k][0];
+
+                      // select the text field
+                      tempInput.style.display = "block";
+                      copyText.select();
+                      // copyText.setSelectionRange(0, 99999); // for mobile devices*/
+
+                      // copy the text inside the text field
+                      document.execCommand("copy");
+                      tempInput.style.display = "none";
+
+                      if (i == 1) {
+                        tempArray[i].style.opacity = "1";
+                        tempArray[i - 1].style.opacity = "1";
+                      }
+                    }
+                  }
+
+                  newImg.onmouseover = function() {
+                    td1.style.opacity = "0.5";
+                    newImg.style.opacity = "0.5";
+                  }
+
+                  newImg.onmouseout = function() {
+                    td1.style.opacity = "1";
+                    newImg.style.opacity = "1";
+                  }
               }
 
               bigDiv.appendChild(newTable);
