@@ -55,7 +55,7 @@ $(document).ready(function() {
                   if (bigArray[j][k][1] <= 20) {
                     newImg.src = "footprints_svg/" + bigArray[j][k][1] + ".svg";
                     // newImg.style.width = "40px";
-                    newImg.style.height = "70px";
+                    newImg.style.height = "80px";
                   }
 
                   else {
