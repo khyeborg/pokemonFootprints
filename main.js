@@ -52,10 +52,11 @@ $(document).ready(function() {
                   let td2 = document.createElement("td");
                   let newImg = document.createElement("img");
 
-                  if (bigArray[j][k][1] <= 20) {
+                  if (bigArray[j][k][1] <= 28) {
                     newImg.src = "footprints_svg/" + bigArray[j][k][1] + ".svg";
                     // newImg.style.width = "40px";
-                    newImg.style.height = "80px";
+                    newImg.style.height = "55px";
+                    newImg.style.padding = "5px 0px";
                   }
 
                   else {
