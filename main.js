@@ -52,7 +52,18 @@ $(document).ready(function() {
                   let td2 = document.createElement("td");
                   let newImg = document.createElement("img");
 
-                  newImg.src = "footprints/" + bigArray[j][k][1] + ".png";
+                  if (bigArray[j][k][1] <= 20) {
+                    newImg.src = "footprints_svg/" + bigArray[j][k][1] + ".svg";
+                    // newImg.style.width = "40px";
+                    newImg.style.height = "70px";
+                  }
+
+                  else {
+                    newImg.src = "footprints/" + bigArray[j][k][1] + ".png";
+                    newImg.style.width = "50px";
+                    newImg.style.height = "50px";
+                  }
+                  
                   td1.innerHTML = bigArray[j][k][0];
 
                   newTable.appendChild(tr2);
