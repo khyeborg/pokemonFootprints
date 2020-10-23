@@ -1,5 +1,6 @@
-let progress = 79;
+let progress = 113;
 let body = document.querySelector("body");
+let spanRef = document.getElementById("clipboard_notification");
 let bigArray = [];
 let counter = 3;
 let excludeArray = [];
@@ -84,13 +85,16 @@ $(document).ready(function() {
                       copyText.value = bigArray[j][k][0];
 
                       // select the text field
-                      tempInput.style.display = "block";
+                      tempInput.style.display = "inline";
                       copyText.select();
                       // copyText.setSelectionRange(0, 99999); // for mobile devices*/
 
                       // copy the text inside the text field
                       document.execCommand("copy");
                       // tempInput.style.display = "none";
+
+                      spanRef.style.paddingLeft = "15px";
+                      spanRef.innerHTML = "COPIED TO CLIPBOARD: " + copyText.value;
 
                       if (i == 0) {
                         tempArray[i].style.opacity = "1";
