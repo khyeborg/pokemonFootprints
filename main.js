@@ -1,4 +1,4 @@
-let progress = 54;
+let progress = 79;
 let body = document.querySelector("body");
 let bigArray = [];
 let counter = 3;
