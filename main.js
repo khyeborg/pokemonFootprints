@@ -1,3 +1,4 @@
+let progress = 54;
 let body = document.querySelector("body");
 let bigArray = [];
 let counter = 3;
@@ -52,11 +53,12 @@ $(document).ready(function() {
                   let td2 = document.createElement("td");
                   let newImg = document.createElement("img");
 
-                  if (bigArray[j][k][1] <= 28) {
+                  if (bigArray[j][k][1] <= progress) {
                     newImg.src = "footprints_svg/" + bigArray[j][k][1] + ".svg";
                     // newImg.style.width = "40px";
                     newImg.style.height = "55px";
                     newImg.style.padding = "5px 0px";
+                    newImg.setAttribute("fill", "red");
                   }
 
                   else {
@@ -68,7 +70,7 @@ $(document).ready(function() {
                   td1.innerHTML = bigArray[j][k][0];
 
                   let tempInput = document.getElementById("myInput");
-                  tempInput.style.display = "none";
+                  // tempInput.style.display = "none";
 
                   newTable.appendChild(tr2);
                   tr2.appendChild(td1);
@@ -88,23 +90,28 @@ $(document).ready(function() {
 
                       // copy the text inside the text field
                       document.execCommand("copy");
-                      tempInput.style.display = "none";
+                      // tempInput.style.display = "none";
 
-                      if (i == 1) {
+                      if (i == 0) {
                         tempArray[i].style.opacity = "1";
+                        tempArray[i + 1].style.opacity = "1";
+                      }
+
+                      else if (i == 1) {
                         tempArray[i - 1].style.opacity = "1";
+                        tempArray[i].style.opacity = "1";
                       }
                     }
-                  }
 
-                  newImg.onmouseover = function() {
-                    td1.style.opacity = "0.5";
-                    newImg.style.opacity = "0.5";
-                  }
+                    tempArray[i].onmouseover = function() {
+                      td1.style.opacity = "0.7";
+                      newImg.style.opacity = "0.7";
+                    }
 
-                  newImg.onmouseout = function() {
-                    td1.style.opacity = "1";
-                    newImg.style.opacity = "1";
+                    tempArray[i].onmouseout = function() {
+                      td1.style.opacity = "1";
+                      newImg.style.opacity = "1";
+                    }
                   }
               }
 
