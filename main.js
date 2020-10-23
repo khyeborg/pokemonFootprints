@@ -1,8 +1,9 @@
-let progress = 113;
+let progress = 153;
+let heightFactor = 4.5;
 let body = document.querySelector("body");
 let spanRef = document.getElementById("clipboard_notification");
 let bigArray = [];
-let colorArray = ["#000000", "#073763", "yellow", "green", "blue", "indigo", "purple"];
+let colorArray = ["#000000", "#073763"];
 let counter = 3;
 let excludeArray = [];
 let badNumArray = [10, 11, 13, 14, 16, 21, 23, 24, 29, 32, 41, 49, 50, 51, 70, 71, 72, 73, 74, 86, 88, 87, 90, 89, 91, 92, 93, 95, 100, 101, 102, 109, 110, 116, 117, 118, 119, 120, 121, 124, 129, 130, 131, 132, 140, 147, 148, 152, 167, 169, 170, 171, 182, 191, 200, 201, 204, 205, 206, 208, 211, 218, 219, 222, 223, 226, 230, 247, 250, 265, 266, 268, 280, 281, 284, 311, 312, 316, 317, 318, 319, 320, 321, 325, 336, 337, 338, 339, 340, 343, 344, 347, 349, 350, 351, 353, 355, 358, 362, 363, 364, 365, 366, 367, 368, 369, 370, 378, 384, 402, 406, 412, 414, 413, 415, 416, 420, 421, 422, 423, 425, 426, 429, 436, 437, 442, 451, 452, 455, 456, 457, 458, 462, 470, 471, 474, 477, 478, 479, 480, 481, 482, 488, 489, 490, 491, 497, 507, 510, 511, 512, 513, 514, 515, 516, 517, 518, 527, 530, 535, 540, 541, 542, 543, 544, 546, 547, 548, 550, 557, 558, 559, 561, 562, 563, 564, 574, 576, 577, 578, 579, 582, 583, 584, 589, 590, 591, 592, 593, 594, 595, 596, 597, 599, 600, 601, 602, 603, 604, 605, 607, 608, 609, 615, 616, 617, 618, 632, 635, 636, 637, 641, 642, 645, 648, 650];
@@ -66,14 +67,24 @@ $(document).ready(function() {
                   let tr2 = document.createElement("tr");
                   let td1 = document.createElement("td");
                   let td2 = document.createElement("td");
+                  let tempDiv = document.createElement("div");
                   let newImg = document.createElement("img");
 
-                  if (bigArray[j][k][1] <= progress) {
-                    newImg.src = "footprints_svg/" + bigArray[j][k][1] + ".svg";
+                  let pokeID = bigArray[j][k][1];
+
+                  if (pokeID <= progress) {
+                    newImg.src = "footprints_svg/" + pokeID + ".svg";
                     // newImg.style.width = "40px";
-                    newImg.style.height = "55px";
                     newImg.style.padding = "5px 0px";
-                    newImg.setAttribute("fill", "red");
+
+                    // scalable height
+                    let scalableHeight = pokedex[pokeID - 1].footprint_height * heightFactor;
+                    newImg.style.height = scalableHeight + "px";
+
+                    // safeguard
+                    if (badNumArray.includes(pokeID) == false && pokedex[pokeID - 1].footprint_height == undefined) {
+                      console.log(pokedex[pokeID - 1].name.english, "error");
+                    }
                   }
 
                   else {
@@ -89,7 +100,10 @@ $(document).ready(function() {
 
                   newTable.appendChild(tr2);
                   tr2.appendChild(td1);
-                  tr2.appendChild(newImg);
+
+                  tempDiv.classList.add("vertical_align");
+                  tempDiv.appendChild(newImg);
+                  tr2.appendChild(tempDiv);
 
                   let tempArray = [td1, newImg];
 

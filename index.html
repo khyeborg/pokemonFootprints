@@ -32,10 +32,17 @@
 			td {
 				text-align: center;
 				vertical-align: center;
+				/*height: 80px;*/
 			}
 
 			div {
 				display: flex;
+			}
+
+			.vertical_align {
+				justify-content: center;
+				align-items: center;
+				height: 72px; /* can change based on results of biggest footprint */
 			}
 
 			input {
@@ -62,6 +69,7 @@
 		<input type="text" placeholder="pokemon" id="myInput">
 		<span id="clipboard_notification">COPIED TO CLIPBOARD: -</span>
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="database.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>
