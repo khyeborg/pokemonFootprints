@@ -2,6 +2,7 @@ let progress = 113;
 let body = document.querySelector("body");
 let spanRef = document.getElementById("clipboard_notification");
 let bigArray = [];
+let colorArray = ["#000000", "#073763", "yellow", "green", "blue", "indigo", "purple"];
 let counter = 3;
 let excludeArray = [];
 let badNumArray = [10, 11, 13, 14, 16, 21, 23, 24, 29, 32, 41, 49, 50, 51, 70, 71, 72, 73, 74, 86, 88, 87, 90, 89, 91, 92, 93, 95, 100, 101, 102, 109, 110, 116, 117, 118, 119, 120, 121, 124, 129, 130, 131, 132, 140, 147, 148, 152, 167, 169, 170, 171, 182, 191, 200, 201, 204, 205, 206, 208, 211, 218, 219, 222, 223, 226, 230, 247, 250, 265, 266, 268, 280, 281, 284, 311, 312, 316, 317, 318, 319, 320, 321, 325, 336, 337, 338, 339, 340, 343, 344, 347, 349, 350, 351, 353, 355, 358, 362, 363, 364, 365, 366, 367, 368, 369, 370, 378, 384, 402, 406, 412, 414, 413, 415, 416, 420, 421, 422, 423, 425, 426, 429, 436, 437, 442, 451, 452, 455, 456, 457, 458, 462, 470, 471, 474, 477, 478, 479, 480, 481, 482, 488, 489, 490, 491, 497, 507, 510, 511, 512, 513, 514, 515, 516, 517, 518, 527, 530, 535, 540, 541, 542, 543, 544, 546, 547, 548, 550, 557, 558, 559, 561, 562, 563, 564, 574, 576, 577, 578, 579, 582, 583, 584, 589, 590, 591, 592, 593, 594, 595, 596, 597, 599, 600, 601, 602, 603, 604, 605, 607, 608, 609, 615, 616, 617, 618, 632, 635, 636, 637, 641, 642, 645, 648, 650];
@@ -41,9 +42,22 @@ $(document).ready(function() {
 
             for (let j = 1; j < bigArray.length - 9; j++) {
               let newTable = document.createElement("table");
-              let tr = document.createElement("tr");
+              let tr = document.createElement("td");
 
-              tr.innerHTML = (j + 3) + " letters";
+              // tr styling + class
+              tr.innerHTML = j + 3;
+              tr.style.fontSize = "40px";
+              tr.style.fontWeight = "bold";
+              tr.style.color = "white";
+              tr.classList.add("sticky");
+
+              if (j % 2 == 0) {
+                tr.style.backgroundColor = colorArray[1];
+              }
+
+              else {
+                tr.style.backgroundColor = colorArray[0];
+              }
 
               newTable.appendChild(tr);
 
@@ -133,5 +147,4 @@ $(document).ready(function() {
     }
 
   });
-
 });
