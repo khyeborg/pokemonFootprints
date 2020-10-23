@@ -106,8 +106,7 @@ $(document).ready(function() {
                       // copy the text inside the text field
                       document.execCommand("copy");
                       // tempInput.style.display = "none";
-
-                      spanRef.style.paddingLeft = "15px";
+                      
                       spanRef.innerHTML = "COPIED TO CLIPBOARD: " + copyText.value;
 
                       if (i == 0) {
@@ -122,7 +121,7 @@ $(document).ready(function() {
                     }
 
                     tempArray[i].onmouseover = function() {
-                      td1.style.opacity = "0.7";
+                      td1.style.opacity = "0.5";
                       newImg.style.opacity = "0.7";
                     }
 
