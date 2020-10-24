@@ -3080,6 +3080,7 @@ const pokedex = [ //
   },
   {
     "id": 154,
+    "footprint_height": 12,
     "name": {
       "english": "Meganium",
       "japanese": "メガニウム",
@@ -3099,6 +3100,7 @@ const pokedex = [ //
   },
   {
     "id": 155,
+    "footprint_height": 7,
     "name": {
       "english": "Cyndaquil",
       "japanese": "ヒノアラシ",
@@ -3118,6 +3120,7 @@ const pokedex = [ //
   },
   {
     "id": 156,
+    "footprint_height": 7,
     "name": {
       "english": "Quilava",
       "japanese": "マグマラシ",
@@ -3137,6 +3140,7 @@ const pokedex = [ //
   },
   {
     "id": 157,
+    "footprint_height": 11,
     "name": {
       "english": "Typhlosion",
       "japanese": "バクフーン",
@@ -3156,6 +3160,7 @@ const pokedex = [ //
   },
   {
     "id": 158,
+    "footprint_height": 10,
     "name": {
       "english": "Totodile",
       "japanese": "ワニノコ",
@@ -3175,6 +3180,7 @@ const pokedex = [ //
   },
   {
     "id": 159,
+    "footprint_height": 11,
     "name": {
       "english": "Croconaw",
       "japanese": "アリゲイツ",
@@ -3194,6 +3200,7 @@ const pokedex = [ //
   },
   {
     "id": 160,
+    "footprint_height": 14,
     "name": {
       "english": "Feraligatr",
       "japanese": "オーダイル",
@@ -3213,6 +3220,7 @@ const pokedex = [ //
   },
   {
     "id": 161,
+    "footprint_height": 6,
     "name": {
       "english": "Sentret",
       "japanese": "オタチ",
@@ -3232,6 +3240,7 @@ const pokedex = [ //
   },
   {
     "id": 162,
+    "footprint_height": 7,
     "name": {
       "english": "Furret",
       "japanese": "オオタチ",
@@ -3251,6 +3260,7 @@ const pokedex = [ //
   },
   {
     "id": 163,
+    "footprint_height": 10,
     "name": {
       "english": "Hoothoot",
       "japanese": "ホーホー",
@@ -3271,6 +3281,7 @@ const pokedex = [ //
   },
   {
     "id": 164,
+    "footprint_height": 13,
     "name": {
       "english": "Noctowl",
       "japanese": "ヨルノズク",
@@ -3291,6 +3302,7 @@ const pokedex = [ //
   },
   {
     "id": 165,
+    "footprint_height": 9,
     "name": {
       "english": "Ledyba",
       "japanese": "レディバ",
@@ -3311,6 +3323,7 @@ const pokedex = [ //
   },
   {
     "id": 166,
+    "footprint_height": 13,
     "name": {
       "english": "Ledian",
       "japanese": "レディアン",
@@ -3351,6 +3364,7 @@ const pokedex = [ //
   },
   {
     "id": 168,
+    "footprint_height": 4,
     "name": {
       "english": "Ariados",
       "japanese": "アリアドス",
@@ -3431,6 +3445,7 @@ const pokedex = [ //
   },
   {
     "id": 172,
+    "footprint_height": 7,
     "name": {
       "english": "Pichu",
       "japanese": "ピチュー",
@@ -3450,6 +3465,7 @@ const pokedex = [ //
   },
   {
     "id": 173,
+    "footprint_height": 3,
     "name": {
       "english": "Cleffa",
       "japanese": "ピィ",
@@ -3469,6 +3485,7 @@ const pokedex = [ //
   },
   {
     "id": 174,
+    "footprint_height": 6,
     "name": {
       "english": "Igglybuff",
       "japanese": "ププリン",
@@ -3489,6 +3506,7 @@ const pokedex = [ //
   },
   {
     "id": 175,
+    "footprint_height": 8,
     "name": {
       "english": "Togepi",
       "japanese": "トゲピー",
@@ -3508,6 +3526,7 @@ const pokedex = [ //
   },
   {
     "id": 176,
+    "footprint_height": 12,
     "name": {
       "english": "Togetic",
       "japanese": "トゲチック",
@@ -3528,6 +3547,7 @@ const pokedex = [ //
   },
   {
     "id": 177,
+    "footprint_height": 8,
     "name": {
       "english": "Natu",
       "japanese": "ネイティ",
@@ -3548,6 +3568,7 @@ const pokedex = [ //
   },
   {
     "id": 178,
+    "footprint_height": 14,
     "name": {
       "english": "Xatu",
       "japanese": "ネイティオ",
@@ -3568,6 +3589,7 @@ const pokedex = [ //
   },
   {
     "id": 179,
+    "footprint_height": 4,
     "name": {
       "english": "Mareep",
       "japanese": "メリープ",
@@ -3587,6 +3609,7 @@ const pokedex = [ //
   },
   {
     "id": 180,
+    "footprint_height": 7,
     "name": {
       "english": "Flaaffy",
       "japanese": "モココ",
@@ -3606,6 +3629,7 @@ const pokedex = [ //
   },
   {
     "id": 181,
+    "footprint_height": 13,
     "name": {
       "english": "Ampharos",
       "japanese": "デンリュウ",
@@ -3644,6 +3668,7 @@ const pokedex = [ //
   },
   {
     "id": 183,
+    "footprint_height": 9,
     "name": {
       "english": "Marill",
       "japanese": "マリル",
@@ -3664,6 +3689,7 @@ const pokedex = [ //
   },
   {
     "id": 184,
+    "footprint_height": 11,
     "name": {
       "english": "Azumarill",
       "japanese": "マリルリ",
@@ -3684,6 +3710,7 @@ const pokedex = [ //
   },
   {
     "id": 185,
+    "footprint_height": 11,
     "name": {
       "english": "Sudowoodo",
       "japanese": "ウソッキー",
@@ -3703,6 +3730,7 @@ const pokedex = [ //
   },
   {
     "id": 186,
+    "footprint_height": 15,
     "name": {
       "english": "Politoed",
       "japanese": "ニョロトノ",
@@ -3722,6 +3750,7 @@ const pokedex = [ //
   },
   {
     "id": 187,
+    "footprint_height": 5,
     "name": {
       "english": "Hoppip",
       "japanese": "ハネッコ",
@@ -3742,6 +3771,7 @@ const pokedex = [ //
   },
   {
     "id": 188,
+    "footprint_height": 7,
     "name": {
       "english": "Skiploom",
       "japanese": "ポポッコ",
