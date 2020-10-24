@@ -1,4 +1,4 @@
-let progress = 153;
+let progress = 188;
 let heightFactor = 4.5;
 let body = document.querySelector("body");
 let spanRef = document.getElementById("clipboard_notification");
