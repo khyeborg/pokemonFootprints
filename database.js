@@ -1,4 +1,4 @@
-const pokedex = [ //
+const pokedex = [
   {
     "id": 1,
     "footprint_height": 8,

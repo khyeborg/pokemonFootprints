@@ -1,0 +1,91 @@
+body {
+    font-size: 16px;
+    /*font-family: Helvetica;*/
+}
+
+img {
+    width: 50px;
+    padding: 0px;
+}
+
+div {
+    /*height: 100px;*/
+}
+
+table {
+    table-layout: auto;
+    width: 14.3%;
+    border: 1px solid black;
+    text-align: center;
+    /*min-width: 120px;*/
+}
+
+td {
+    text-align: center;
+    vertical-align: center;
+    /*height: 80px;*/
+}
+
+div {
+    display: flex;
+}
+
+.vertical_align {
+    justify-content: center;
+    align-items: center;
+    height: 70px; /* can change based on results of biggest footprint */
+}
+
+input {
+    /*display: none;*/
+    /*width: 100%;*/
+}
+
+#input_div {
+    padding-top: 30px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    opacity: 1;
+}
+
+span {
+    padding-left: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+#all_the_tabs {
+    display: flex;
+}
+
+.tab {
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    font-size: 150%;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 2px;
+    font-family: Helvetica;
+    border-radius: 18px 18px 0px 0px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+@media(max-width: 1200px) {
+    .responsive_hide {
+        display: none;
+    }
+
+    table {
+        width: 16.7%;
+    }
+}
+
+

@@ -3,71 +3,28 @@
 	<head>
 		<title>Pokemon Footprints</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
 		<link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon"/>
-
-		<style>
-			body {
-				font-size: 16px;
-			}
-
-			img {
-				width: 50px;
-			}
-
-			path {
-				fill: #6b493f;
-			}
-
-			div {
-				height: 100px;
-			}
-
-			table {
-				table-layout: auto;
-  				width: 14.3%;
-  				border: 1px solid black;
-  				text-align: center;
-			}
-
-			td {
-				text-align: center;
-				vertical-align: center;
-				/*height: 80px;*/
-			}
-
-			div {
-				display: flex;
-			}
-
-			.vertical_align {
-				justify-content: center;
-				align-items: center;
-				height: 72px; /* can change based on results of biggest footprint */
-			}
-
-			input {
-				/*display: none;*/
-				/*width: 100%;*/
-			}
-
-			.sticky {
-				position: sticky;
-				top: 0;
-				opacity: 1;
-			}
-
-			span {
-				padding-left: 15px;
-			}
-		</style>
-
-		
 	</head>
 
 	<body>
-		<!-- <h1 class="sticky">hello!</h1> -->
-		<input type="text" placeholder="pokemon" id="myInput">
-		<span id="clipboard_notification">COPIED TO CLIPBOARD: -</span>
+
+		<div id="all_the_tabs">
+			<span class="tab active" id="specialized_tab">SPECIALIZED</span>
+			<span class="tab" id="generic_tab">GENERIC</span>
+			<span class="tab" id="memorized_tab">MEMORIZED</span>
+		</div>
+
+		<div class="page" id="specialized_page"></div>
+
+		<div class="page hidden" id="generic_page"></div>
+
+		<div class="page hidden" id="memorized_page"></div>
+
+		<div id="input_div">
+			<input type="text" placeholder="pokemon" id="myInput">
+			<span id="clipboard_notification">COPIED TO CLIPBOARD: -</span>
+		</div>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="database.js"></script>
 		<script src="main.js"></script>
