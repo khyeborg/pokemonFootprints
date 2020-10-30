@@ -64,12 +64,12 @@ span {
 }
 
 .tab {
-    text-align: left;
+    text-align: center;
     height: 40px;
     width: 100%;
     font-size: 150%;
     padding-top: 15px;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-bottom: 2px;
     font-family: Helvetica;
     border-radius: 18px 18px 0px 0px;
@@ -81,6 +81,10 @@ span {
 @media(max-width: 1200px) {
     .responsive_hide {
         display: none;
+    }
+
+    #generic_tab {
+        /*display: none;*/
     }
 
     table {
