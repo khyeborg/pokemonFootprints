@@ -29,7 +29,7 @@ let hoverColor = "lightblue";
 
 // get references 
 let tabsArray = document.getElementsByClassName("tab");
-let tabsBackgroundColorArray = ["#153243", "#3b8686", "#79bd9a", "#a8daa8", "#cff09e"];
+let tabsBackgroundColorArray = ["#153243", "#00747A", "#754668", "#4B5850", "#800F20"];
 let pageArray = document.getElementsByClassName("page");
 let specializedPage = document.getElementById("specialized_page");
 let genericPage = document.getElementById("generic_page");

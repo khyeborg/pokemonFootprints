@@ -8,6 +8,14 @@ img {
     padding: 0px;
 }
 
+#birds_page div {
+    padding: 5px 0px;
+}
+
+#holes_page div {
+    padding: 5px 0px;
+}
+
 div {
     /*height: 100px;*/
 }
@@ -76,6 +84,7 @@ span {
     color: white;
     font-weight: bold;
     letter-spacing: 3px;
+    min-width: 150px;
 }
 
 @media(max-width: 1200px) {
