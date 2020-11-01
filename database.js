@@ -305,6 +305,7 @@ const pokedex = [
   },
   {
     "id": 16,
+    "footprint_height": 11,
     "name": {
       "english": "Pidgey",
       "japanese": "ポッポ",
@@ -407,6 +408,7 @@ const pokedex = [
   },
   {
     "id": 21,
+    "footprint_height": 11,
     "name": {
       "english": "Spearow",
       "japanese": "オニスズメ",
