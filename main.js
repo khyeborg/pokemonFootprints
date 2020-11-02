@@ -344,6 +344,9 @@ for (let i = 0; i < 650; i++) {
   // if the pokemon has a valid footprint
   if (badNumArray.includes(i + 1) == false && memorizedArray.includes(i + 1)) {
     let name = pokedex[i].name.english.toLowerCase();
+
+    if (name == "farfetch'd") { name = "farfetchd"; }
+    
     let nameLength = name.length;
     bigArrayMemorized[nameLength - 3].push([name, i + 1]);
   }
