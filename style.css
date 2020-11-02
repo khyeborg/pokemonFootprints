@@ -92,8 +92,8 @@ span {
         display: none;
     }
 
-    #generic_tab {
-        /*display: none;*/
+    #memorized_tab {
+        display: none;
     }
 
     table {
