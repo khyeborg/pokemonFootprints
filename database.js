@@ -12997,7 +12997,7 @@ const pokedex = [
     "id": 644,
     "footprint_height": 14,
     "name": {
-      "english": "Zekrom ",
+      "english": "Zekrom",
       "japanese": "ゼクロム",
       "chinese": "捷克罗姆"
     },
