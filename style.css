@@ -16,26 +16,30 @@ img {
     padding: 5px 0px;
 }
 
-div {
-    /*height: 100px;*/
-}
-
 table {
     table-layout: auto;
     width: 14.3%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     text-align: center;
     /*min-width: 120px;*/
+}
+
+tr {
+	/*background-color: red;*/
+	/*height: 50px;*/
 }
 
 td {
     text-align: center;
     vertical-align: center;
     /*height: 80px;*/
+    /*background-color: yellow;*/
 }
 
 div {
     display: flex;
+    max-height: 80px;
+    padding-bottom: 10px;
 }
 
 .vertical_align {
@@ -50,13 +54,14 @@ input {
 }
 
 #input_div {
-    padding-top: 30px;
+    padding-top: 5000px;
 }
 
 .sticky {
     position: sticky;
     top: 0;
     opacity: 1;
+    height: 80px;
 }
 
 span {
@@ -69,6 +74,7 @@ span {
 
 #all_the_tabs {
     display: flex;
+    padding-bottom: 0px;
 }
 
 .tab {

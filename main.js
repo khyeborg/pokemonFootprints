@@ -107,7 +107,7 @@ for (let j = 1; j < bigArray.length - 9; j++) {
     newTable.classList.add("responsive_hide");
   }
 
-  let tr = document.createElement("td");
+  let tr = document.createElement("tr");
 
   // tr styling + class
   tr.innerHTML = j + 3;
